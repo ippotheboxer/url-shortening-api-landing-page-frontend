@@ -3,7 +3,6 @@ import Button from '../Button';
 import Wrapper from '../Wrapper';
 import { shortenLink } from '../../api/shortenLink';
 
-<<<<<<< HEAD
 const isValidUrl = (url: string): boolean => {
   const urlPattern = new RegExp(
     "^(https?:\\/\\/)" + // Ensure it starts with http:// or https://
@@ -18,8 +17,6 @@ const isValidUrl = (url: string): boolean => {
   return urlPattern.test(url);
 };
 
-=======
->>>>>>> e092045034a9cf6b49928d3c8aafec095ec3150a
 const InputURL: React.FC = () => {
   const [url, setUrl] = useState<string>("");
   const [error, setError] = useState<string>("");
@@ -36,16 +33,11 @@ const InputURL: React.FC = () => {
     e.preventDefault();
     if (url.trim() === "") {
       setError("Please add a link");
-<<<<<<< HEAD
       return;
     } else if (!isValidUrl(url)) {
       setError("Please enter a valid URL.");
       return;
-    }
-=======
-    } 
->>>>>>> e092045034a9cf6b49928d3c8aafec095ec3150a
-    else {
+    } else {
       setError("");
       const shortenedURL = await shortenLink(url);
 
@@ -100,5 +92,6 @@ const InputURL: React.FC = () => {
     </Wrapper>
   );
 }
+
 
 export default InputURL;
