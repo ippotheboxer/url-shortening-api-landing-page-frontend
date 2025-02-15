@@ -33,12 +33,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-v_SCKa_ciI)
+- [Live Site URL](https://url-shortening-api-landing-page-frontend.onrender.com/)
+- [Backend repo](https://github.com/ippotheboxer/url-shortening-api-landing-page-server)
 
 ## My process
 
-I designed the app with tailwind using the mobile-first approach. 
+I designed the app with tailwind using the mobile-first approach. I tried to create as many resuable components as possible, for example the button and the wrapper component. The next part was making sure that the app was receiving the urls and then calling the api: originally I only had a frontend, however you cannot call the API on the frontend due to cors policy, so I made a simple backend which makes a request to cleanURI. I then hosted the backend and frontend separately on render. Then I made sure that each request the user made (as long as it was validated) would get stored in an array of objects in local storage. Getting this to work took a lot of trial and error, but eventually I got it to work so that the URL links could be mapped through to create divs containing the information and a copy button to copy the shortened link. This project took a lot of work but I'm proud with how it turned out.
 
 ### Built with
 
@@ -49,5 +50,5 @@ I designed the app with tailwind using the mobile-first approach.
 
 ### Useful resources
 
-- [React-gh-pages guide](https://github.com/gitname/react-gh-pages) - Great tutorial for setting up github pages with React
-- [Issue with vite and gh-pages](https://github.com/tschaub/gh-pages/issues/485) - this error occurs if using vite and it solved the problem
+- [Render](https://render.com/) - I hosted the backend as a webapp, and the frontend as a static site with render.
+- [CleanURI](https://cleanuri.com/) - The api used to shortned urls.
