@@ -1,6 +1,6 @@
 export async function shortenLink(userLink: string) {
     try {
-        const response = await fetch("https://url-shortening-api-landing-page-server.onrender.com/shorten", {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/shorten`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ url: userLink }),
