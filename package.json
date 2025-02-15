@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
-  "homepage": "https://github.com/ippotheboxer/url-shortening-api-landing-page",
+  "homepage": "https://github.com/ippotheboxer/url-shortening-api-landing-page-server-frontend",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

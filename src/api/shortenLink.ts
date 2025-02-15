@@ -5,7 +5,6 @@ export async function shortenLink(userLink: string) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ url: userLink }),
         });
-    
         const data = await response.json();
         return data.result_url;
       } catch (error) {
